@@ -1627,14 +1627,14 @@ html[data-theme='light'] .site-footer {
 }
 
 [data-reveal] {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.62s ease, transform 0.62s ease;
+  opacity: 1;
+  transform: none;
+  transition: none;
 }
 
 [data-reveal].is-visible {
   opacity: 1;
-  transform: translateY(0);
+  transform: none;
 }
 
 .button:focus-visible,
