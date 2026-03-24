@@ -1,0 +1,143 @@
+﻿<!doctype html>
+<html lang="es" data-theme="light">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Política de privacidad | Nexion</title>
+  <meta name="description" content="Cómo se gestionan los datos en MedSys bajo una operación clínica local o de escritorio, con roles, respaldos y responsabilidad del operador." />
+  <meta property="og:title" content="Política de privacidad | MedSys | Nexion" />
+  <meta property="og:description" content="Tratamiento de datos, acceso y responsabilidad operativa en MedSys." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="src/icono.png" />
+  <link rel="icon" type="image/png" href="src/icono.png" />
+  <link rel="preload" as="image" href="src/logoBlack.png" />
+  <link rel="preload" as="image" href="src/logoWhite.png" />
+  <script>
+    (() => {
+      const root = document.documentElement;
+      root.classList.add('js');
+      try {
+        const storedTheme = localStorage.getItem('medsys-theme');
+        if (storedTheme === 'light' || storedTheme === 'dark') {
+          root.dataset.theme = storedTheme;
+        }
+      } catch (_) {
+        root.dataset.theme = root.dataset.theme || 'light';
+      }
+    })();
+  </script>
+  <link rel="stylesheet" href="assets/styles.css" />
+  <script defer src="assets/main.js"></script>
+</head>
+<body>
+  <div class="bg-orb orb-a" data-orb></div>
+  <div class="bg-orb orb-b" data-orb></div>
+
+  <header class="nav" data-nav>
+    <div class="container nav-inner">
+      <a class="brand" href="index.html" aria-label="MedSys by Nexion">
+        <span class="brand-mark" aria-hidden="true">
+          <img class="brand-logo brand-logo--light" src="src/logoBlack.png" alt="" width="300" height="150" />
+          <img class="brand-logo brand-logo--dark" src="src/logoWhite.png" alt="" width="300" height="150" />
+        </span>
+        <span class="sr-only">MedSys by Nexion</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-menu" aria-label="Abrir menú" data-nav-toggle>
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 5h16" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"></path><path d="M4 12h16" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"></path><path d="M4 19h16" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+      </button>
+
+      <nav class="nav-menu" id="site-menu" aria-label="Navegación principal" data-nav-menu>
+        <div class="nav-links">
+          <a class="nav-link" data-nav-link href="index.html">Inicio</a>
+          <a class="nav-link" data-nav-link href="precios.html">Precios</a>
+          <a class="nav-link" data-nav-link href="terminos.html">Términos</a>
+          <a class="nav-link" data-nav-link href="privacidad.html">Privacidad</a>
+          <a class="nav-link" data-nav-link href="reembolsos.html">Reembolsos</a>
+        </div>
+        <div class="nav-actions">
+          <a class="button small nav-cta" href="mailto:nexiongt@gmail.com?subject=Informaci%C3%B3n%20MedSys">Solicitar información</a>
+          <button class="theme-toggle" type="button" data-theme-toggle aria-label="Cambiar a modo oscuro" aria-pressed="false">
+            <span class="theme-toggle-icon theme-toggle-icon-sun" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"></circle><path d="M12 2v2" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"></path><path d="M12 20v2" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"></path><path d="m4.93 4.93 1.41 1.41" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"></path><path d="m17.66 17.66 1.41 1.41" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"></path><path d="M2 12h2" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"></path><path d="M20 12h2" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"></path><path d="m6.34 17.66-1.41 1.41" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"></path><path d="m19.07 4.93-1.41 1.41" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
+            <span class="theme-toggle-thumb" aria-hidden="true"></span>
+            <span class="theme-toggle-icon theme-toggle-icon-moon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
+          </button>
+        </div>
+      </nav>
+      <div class="nav-overlay" data-nav-close></div>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container legal">
+      <div class="section-head" data-reveal>
+        <span class="badge">Privacidad</span>
+        <h1 class="section-title">Política de privacidad</h1>
+        <p class="section-subtitle">Principios generales sobre tratamiento de datos en MedSys.</p>
+      </div>
+
+      <section data-reveal>
+        <h2>1. Datos que se gestionan</h2>
+        <p>MedSys puede gestionar datos de pacientes, agenda, expediente, visitas, recetas, pagos, presupuestos, planes, inventario y documentos asociados, según el uso y el plan activo de cada instalación.</p>
+      </section>
+
+      <section data-reveal>
+        <h2>2. Finalidad del tratamiento</h2>
+        <p>La finalidad es facilitar la gestión clínica y administrativa de consultorios o clínicas, mejorar la trazabilidad operativa y reducir errores en procesos de atención y control interno.</p>
+      </section>
+
+      <section data-reveal>
+        <h2>3. Modo de almacenamiento</h2>
+        <p>MedSys opera principalmente en entorno local o de escritorio. Por ello, la clínica o consultorio suele ser responsable del entorno donde los datos se almacenan y resguardan.</p>
+      </section>
+
+      <section data-reveal>
+        <h2>4. Acceso y roles</h2>
+        <p>El acceso a la información se administra por usuarios, roles y módulos habilitados. Esto ayuda a limitar funciones sensibles según el perfil y el plan en uso.</p>
+      </section>
+
+      <section data-reveal>
+        <h2>5. Conservación y eliminación</h2>
+        <p>La conservación, depuración o eliminación de datos depende de las políticas de la clínica o consultorio y de la normativa aplicable a su operación.</p>
+      </section>
+
+      <section data-reveal>
+        <h2>6. Respaldos y exportaciones</h2>
+        <p>El sistema puede ofrecer mecanismos de respaldo o restauración dentro del producto, pero el responsable operativo debe definir su frecuencia, custodia y procedimientos internos de continuidad.</p>
+      </section>
+
+      <section data-reveal>
+        <h2>7. Derechos del titular</h2>
+        <p>Las solicitudes relacionadas con datos personales deben canalizarse ante la entidad que opera MedSys, ya que normalmente esa clínica o consultorio es el responsable del tratamiento.</p>
+      </section>
+
+      <section data-reveal>
+        <h2>8. Contacto</h2>
+        <p>Para consultas de privacidad o soporte: <a class="contact-link contact-link--mail" href="mailto:nexiongt@gmail.com">nexiongt@gmail.com</a> y <a class="contact-link contact-link--whatsapp" href="https://wa.me/50245707531" target="_blank" rel="noopener noreferrer">+502 4570-7531</a>.</p>
+      </section>
+
+      <section class="info-box" data-reveal>
+        <p>MedSys es una herramienta de gestión. En la mayoría de implementaciones, el responsable del tratamiento de los datos es la clínica o consultorio que opera el sistema, no Nexion como proveedor del software.</p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span data-year></span> Nexion Software · MedSys</p>
+      <div class="footer-links">
+        <a href="terminos.html">Términos</a>
+        <a href="privacidad.html">Privacidad</a>
+        <a href="reembolsos.html">Reembolsos</a>
+      </div>
+      <div class="footer-contact">
+        <a class="contact-link contact-link--mail" href="mailto:nexiongt@gmail.com">nexiongt@gmail.com</a>
+        <a class="contact-link contact-link--whatsapp" href="https://wa.me/50245707531" target="_blank" rel="noopener noreferrer">+502 4570-7531</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
+
+
+
