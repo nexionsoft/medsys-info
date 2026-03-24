@@ -61,7 +61,6 @@ body {
   background: var(--bg);
   line-height: 1.6;
   overflow-x: clip;
-  transition: opacity 0.38s ease, transform 0.38s ease, background-color 0.3s ease;
 }
 
 body,
@@ -74,19 +73,6 @@ textarea {
 
 html[data-theme='light'] body {
   background: var(--bg);
-}
-
-html.js body {
-  opacity: 0;
-}
-
-html.js body.page-ready {
-  opacity: 1;
-}
-
-body.is-leaving {
-  opacity: 0 !important;
-  pointer-events: none;
 }
 
 html.menu-open,
@@ -357,8 +343,8 @@ html[data-theme='light'] .nav {
 
 .brand-mark {
   position: relative;
-  width: 156px;
-  height: 78px;
+  width: 182px;
+  height: 91px;
 }
 
 .brand-logo {
@@ -1787,8 +1773,8 @@ a:focus-visible {
 
 @media (max-width: 680px) {
   .brand-mark {
-    width: 132px;
-    height: 66px;
+    width: 154px;
+    height: 77px;
   }
 
   .hero-title-row {
