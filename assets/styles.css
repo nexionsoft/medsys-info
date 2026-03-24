@@ -4,7 +4,7 @@
   --font-sans: 'Mulish', sans-serif;
   --promo-offset: 60px;
   --nav-height: 94px;
-  --header-stack-gap: 1rem;
+  --header-stack-gap: 3.1rem;
   --bg: #0c1524;
   --bg-soft: #111c2e;
   --fg: #edf3ff;
@@ -109,6 +109,10 @@ footer {
 
 main {
   padding-top: calc(var(--promo-offset) + var(--nav-height) + var(--header-stack-gap));
+}
+
+main:not(.section) {
+  padding-top: calc(var(--promo-offset) + var(--nav-height) + 3rem);
 }
 
 a {
@@ -220,6 +224,12 @@ html[data-theme='light'] .badge {
   line-height: 1.1;
 }
 
+.promo-countdown__text {
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  font-variation-settings: 'wght' 600;
+}
+
 .promo-countdown__timer {
   display: inline-flex;
   align-items: center;
@@ -236,7 +246,10 @@ html[data-theme='light'] .badge {
 
 .promo-countdown__item strong {
   font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
   line-height: 1;
+  font-variation-settings: 'wght' 600;
 }
 
 .promo-countdown__item span {
@@ -938,6 +951,16 @@ html[data-theme='light'] .title-icon {
   transform: rotate(-14deg);
 }
 
+.pricing-banner-sticker--left-mini {
+  left: clamp(22rem, 25vw, 28rem);
+  top: clamp(5rem, 8.2vw, 6.2rem);
+  width: clamp(48px, 4.3vw, 60px);
+  height: clamp(48px, 4.3vw, 60px);
+  border-radius: 15px;
+  font-size: clamp(2rem, 3vw, 2.7rem);
+  transform: rotate(9deg);
+}
+
 .pricing-banner-sticker--right {
   right: clamp(2rem, 3vw, 2.9rem);
   top: clamp(3.9rem, 7.2vw, 5.1rem);
@@ -1481,6 +1504,12 @@ html[data-theme='dark'] .plan-actions .button.secondary:hover {
   color: var(--accent-2) !important;
   border-color: rgba(79, 120, 255, 0.7) !important;
   background: rgba(255, 255, 255, 0.88) !important;
+}
+
+html[data-theme='dark'] .compare-jump {
+  color: #f3f7ff !important;
+  border-color: rgba(149, 168, 255, 0.34) !important;
+  background: rgba(15, 23, 38, 0.92) !important;
 }
 
 .pricing-footnote {
@@ -2233,6 +2262,10 @@ main.section {
   padding: calc(var(--promo-offset) + var(--nav-height) + var(--header-stack-gap)) 0 clamp(2.35rem, 6vw, 4.5rem);
 }
 
+main.section:not(:has(.pricing-banner)) {
+  padding-top: calc(var(--promo-offset) + var(--nav-height) + 3rem);
+}
+
 .hero {
   padding: 0 0 clamp(2.75rem, 6vw, 4rem);
 }
@@ -2441,7 +2474,7 @@ main.section {
 @media (max-width: 699px) {
   :root {
     --promo-offset: 78px;
-    --header-stack-gap: 1.15rem;
+    --header-stack-gap: 2rem;
   }
 
   .promo-countdown__inner {
@@ -2537,6 +2570,15 @@ main.section {
   .pricing-banner-sticker--left {
     left: 0.65rem;
     top: 4.5rem;
+  }
+
+  .pricing-banner-sticker--left-mini {
+    left: 7.8rem;
+    top: 3.2rem;
+    width: 38px;
+    height: 38px;
+    border-radius: 11px;
+    font-size: 1.65rem;
   }
 
   .pricing-banner-sticker--right {
