@@ -180,7 +180,7 @@
           <span class="promo-countdown__item"><strong data-promo-minutes>00</strong><span>m</span></span>
           <span class="promo-countdown__item"><strong data-promo-seconds>00</strong><span>s</span></span>
         </div>
-        <a class="promo-countdown__link" href="precios.html">Explorar</a>
+        <a class="promo-countdown__link" href="precios.html#planes">Explorar</a>
       </div>
     `;
 
