@@ -1,0 +1,492 @@
+﻿<!doctype html>
+<html lang="es" data-theme="light">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Planes y Licencias | Nexion</title>
+  <meta name="description" content="Licencias MedSys en USD. Compara Esencial, Clínica, Pro y Enterprise para consultorios y clínicas." />
+  <meta property="og:title" content="Planes y Licencias | MedSys | Nexion" />
+  <meta property="og:description" content="Comparación de licencias MedSys en USD para consultorios y clínicas, con módulos y alcances según plan." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="src/iconoPrograma.png" />
+  <link rel="icon" type="image/png" href="src/iconoPrograma.png" />
+  <link rel="preload" as="image" href="src/logoBlack.png" />
+  <link rel="preload" as="image" href="src/logoWhite.png" />
+  <script>
+    (() => {
+      const root = document.documentElement;
+      root.classList.add('js');
+      try {
+        const storedTheme = localStorage.getItem('medsys-theme');
+        if (storedTheme === 'light' || storedTheme === 'dark') {
+          root.dataset.theme = storedTheme;
+        }
+      } catch (_) {
+        root.dataset.theme = root.dataset.theme || 'light';
+      }
+    })();
+  </script>
+  <link rel="stylesheet" href="assets/styles.css" />
+  <script defer src="assets/main.js"></script>
+</head>
+<body>
+  <div class="bg-orb orb-a" data-orb></div>
+  <div class="bg-orb orb-b" data-orb></div>
+
+  <header class="nav" data-nav>
+    <div class="container nav-inner">
+      <a class="brand" href="index.html" aria-label="MedSys by Nexion">
+        <span class="brand-mark" aria-hidden="true">
+          <img class="brand-logo brand-logo--light" src="src/logoBlack.png" alt="" width="300" height="150" />
+          <img class="brand-logo brand-logo--dark" src="src/logoWhite.png" alt="" width="300" height="150" />
+        </span>
+        <span class="sr-only">MedSys by Nexion</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-menu" aria-label="Abrir menú" data-nav-toggle>
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M4 5h16"></path>
+          <path d="M4 12h16"></path>
+          <path d="M4 19h16"></path>
+        </svg>
+      </button>
+
+      <nav class="nav-menu" id="site-menu" aria-label="Navegación principal" data-nav-menu>
+        <div class="nav-links">
+          <a class="nav-link" data-nav-link href="index.html">Inicio</a>
+          <a class="nav-link" data-nav-link href="precios.html">Precios</a>
+          <a class="nav-link" data-nav-link href="terminos.html">Términos</a>
+          <a class="nav-link" data-nav-link href="privacidad.html">Privacidad</a>
+          <a class="nav-link" data-nav-link href="reembolsos.html">Reembolsos</a>
+        </div>
+        <div class="nav-actions">
+          <a class="button small nav-cta" href="mailto:nexiongt@gmail.com?subject=Licencias%20MedSys">Solicitar información</a>
+          <button class="theme-toggle" type="button" data-theme-toggle aria-label="Cambiar a modo oscuro" aria-pressed="false">
+            <span class="theme-toggle-icon theme-toggle-icon-sun" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <circle cx="12" cy="12" r="4"></circle>
+                <path d="M12 2v2"></path>
+                <path d="M12 20v2"></path>
+                <path d="m4.93 4.93 1.41 1.41"></path>
+                <path d="m17.66 17.66 1.41 1.41"></path>
+                <path d="M2 12h2"></path>
+                <path d="M20 12h2"></path>
+                <path d="m6.34 17.66-1.41 1.41"></path>
+                <path d="m19.07 4.93-1.41 1.41"></path>
+              </svg>
+            </span>
+            <span class="theme-toggle-thumb" aria-hidden="true"></span>
+            <span class="theme-toggle-icon theme-toggle-icon-moon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"></path>
+              </svg>
+            </span>
+          </button>
+        </div>
+      </nav>
+      <div class="nav-overlay" data-nav-close></div>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <span class="badge">Licencias</span>
+        <h1 class="section-title">Planes y licencias para clínicas y consultorios</h1>
+      </div>
+
+      <section class="section pricing-section">
+        <div class="pricing-shell">
+          <div class="billing-center" data-reveal>
+            <div class="billing-toggle" role="radiogroup" aria-label="Ciclo de facturación">
+              <span class="billing-highlight" aria-hidden="true"></span>
+              <input class="billing-input" type="radio" name="billing-cycle" id="billing-monthly" checked />
+              <label class="billing-option" for="billing-monthly">Mensual</label>
+              <input class="billing-input" type="radio" name="billing-cycle" id="billing-annual" />
+              <label class="billing-option" for="billing-annual">Anual</label>
+            </div>
+          </div>
+
+          <div class="pricing-grid" data-pricing-grid>
+            <article class="card plan" data-reveal>
+              <span class="plan-price-chip">-34%</span>
+              <div class="plan-header">
+                <span class="eyebrow">Base clínica</span>
+                <h2 class="icon-title icon-title--sm">
+                  <span class="title-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                      <path d="M12 11v4"></path>
+                      <path d="M14 13h-4"></path>
+                      <path d="M16 6V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"></path>
+                      <path d="M18 6v14"></path>
+                      <path d="M6 6v14"></path>
+                      <rect width="20" height="14" x="2" y="6" rx="2"></rect>
+                    </svg>
+                  </span>
+                  <span>Esencial</span>
+                </h2>
+                <p class="plan-summary">Base operativa para atención diaria sin módulos financieros o administrativos avanzados.</p>
+              </div>
+
+              <div class="plan-price-stack" aria-live="polite">
+                <div class="plan-price-view" data-price="monthly">
+                  <p class="plan-price-compare">USD 29<span class="plan-period">/mes</span></p>
+                  <p class="plan-price-line"><span class="plan-currency">USD</span><span class="plan-amount">19</span><span class="plan-period">/mes</span></p>
+                  <p class="plan-price-note">Referencia base del portafolio</p>
+                </div>
+                <div class="plan-price-view" data-price="annual">
+                  <p class="plan-price-compare">USD 290<span class="plan-period">/año</span></p>
+                  <p class="plan-price-line"><span class="plan-currency">USD</span><span class="plan-amount">190</span><span class="plan-period">/año</span></p>
+                  <p class="plan-price-note">Equivale a USD 15.83<span class="plan-period">/mes</span></p>
+                </div>
+              </div>
+
+              <p class="price-sub">Incluye agenda, pacientes, expediente, visitas y recetas.</p>
+              <ul class="feature-list">
+                <li>1 doctor</li>
+                <li>1 recepcionista</li>
+                <li>1 PC</li>
+                <li>Recordatorios internos y configuración básica</li>
+              </ul>
+              <div class="plan-actions">
+                <a class="button secondary" href="mailto:nexiongt@gmail.com?subject=Licencia%20MedSys%20Esencial">Consultar Esencial</a>
+              </div>
+            </article>
+
+            <article class="card plan" data-reveal>
+              <span class="plan-price-chip">-31%</span>
+              <div class="plan-header">
+                <span class="eyebrow">Operación clínica</span>
+                <h2 class="icon-title icon-title--sm">
+                  <span class="title-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                      <path d="M18 21a8 8 0 0 0-16 0"></path>
+                      <circle cx="10" cy="8" r="5"></circle>
+                      <path d="M22 20c0-3.37-2-6.5-4-8a5 5 0 0 0-.45-8.3"></path>
+                    </svg>
+                  </span>
+                  <span>Clínica</span>
+                </h2>
+                <p class="plan-summary">Amplía la operación con cobros, presupuestos, planes, reportes, respaldos manuales y multi-PC local.</p>
+              </div>
+
+              <div class="plan-price-stack" aria-live="polite">
+                <div class="plan-price-view" data-price="monthly">
+                  <p class="plan-price-compare">USD 42<span class="plan-period">/mes</span></p>
+                  <p class="plan-price-line"><span class="plan-currency">USD</span><span class="plan-amount">29</span><span class="plan-period">/mes</span></p>
+                  <p class="plan-price-note">Equivale a 1.53x del plan Esencial</p>
+                </div>
+                <div class="plan-price-view" data-price="annual">
+                  <p class="plan-price-compare">USD 420<span class="plan-period">/año</span></p>
+                  <p class="plan-price-line"><span class="plan-currency">USD</span><span class="plan-amount">290</span><span class="plan-period">/año</span></p>
+                  <p class="plan-price-note">USD 24.17<span class="plan-period">/mes</span> · 1.53x Esencial</p>
+                </div>
+              </div>
+
+              <p class="price-sub">Suma pagos, presupuestos, planes, reportes, respaldos manuales y odontograma cuando aplica.</p>
+              <ul class="feature-list">
+                <li>2 doctores</li>
+                <li>1 recepcionista</li>
+                <li>3 PCs</li>
+                <li>Sonidos personalizados y capacidad multi-PC</li>
+              </ul>
+              <div class="plan-actions">
+                <a class="button secondary" href="mailto:nexiongt@gmail.com?subject=Licencia%20MedSys%20Cl%C3%ADnica">Consultar Clínica</a>
+              </div>
+            </article>
+
+            <article class="plan plan-popular" data-reveal>
+              <div class="plan-popular-shell">
+                <div class="plan-ribbon">Más vendido</div>
+                <div class="card plan-popular-card">
+                  <span class="plan-price-chip">-29%</span>
+                  <div class="plan-header">
+                    <span class="eyebrow">Operación ampliada</span>
+                    <h2 class="icon-title icon-title--sm">
+                      <span class="title-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                          <path d="M3 3v16a2 2 0 0 0 2 2h16"></path>
+                          <path d="M18 17V9"></path>
+                          <path d="M13 17V5"></path>
+                          <path d="M8 17v-3"></path>
+                        </svg>
+                      </span>
+                      <span>Pro</span>
+                    </h2>
+                    <p class="plan-summary">Añade inventario, ventas, movimientos, auditoría y plantillas PDF para equipos con más control administrativo.</p>
+                  </div>
+
+                  <div class="plan-price-stack" aria-live="polite">
+                    <div class="plan-price-view" data-price="monthly">
+                      <p class="plan-price-compare">USD 69<span class="plan-period">/mes</span></p>
+                      <p class="plan-price-line"><span class="plan-currency">USD</span><span class="plan-amount">49</span><span class="plan-period">/mes</span></p>
+                      <p class="plan-price-note">Equivale a 2.58x del plan Esencial</p>
+                    </div>
+                    <div class="plan-price-view" data-price="annual">
+                      <p class="plan-price-compare">USD 690<span class="plan-period">/año</span></p>
+                      <p class="plan-price-line"><span class="plan-currency">USD</span><span class="plan-amount">490</span><span class="plan-period">/año</span></p>
+                      <p class="plan-price-note">USD 40.83<span class="plan-period">/mes</span> · 2.58x Esencial</p>
+                    </div>
+                  </div>
+
+                  <p class="price-sub">Incluye inventario, auditoría y plantillas PDF para una operación más amplia.</p>
+                  <ul class="feature-list">
+                    <li>3 doctores</li>
+                    <li>3 recepcionistas</li>
+                    <li>6 PCs</li>
+                    <li>Inventario, auditoría y plantillas PDF</li>
+                  </ul>
+                  <div class="plan-actions">
+                    <a class="button" href="mailto:nexiongt@gmail.com?subject=Licencia%20MedSys%20Pro">Consultar Pro</a>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="card plan" data-reveal>
+              <span class="plan-price-chip">-28%</span>
+              <div class="plan-header">
+                <span class="eyebrow">Escala total</span>
+                <h2 class="icon-title icon-title--sm">
+                  <span class="title-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                      <path d="M10 12h4"></path>
+                      <path d="M10 8h4"></path>
+                      <path d="M14 21v-3a2 2 0 0 0-4 0v3"></path>
+                      <path d="M6 10H4a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-2"></path>
+                      <path d="M6 21V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v16"></path>
+                    </svg>
+                  </span>
+                  <span>Enterprise</span>
+                </h2>
+                <p class="plan-summary">Incluye todos los módulos de la plataforma con límites abiertos y respaldos automáticos programables.</p>
+              </div>
+
+              <div class="plan-price-stack" aria-live="polite">
+                <div class="plan-price-view" data-price="monthly">
+                  <p class="plan-price-compare">USD 109<span class="plan-period">/mes</span></p>
+                  <p class="plan-price-line"><span class="plan-currency">USD</span><span class="plan-amount">79</span><span class="plan-period">/mes</span></p>
+                  <p class="plan-price-note">Equivale a 4.16x del plan Esencial</p>
+                </div>
+                <div class="plan-price-view" data-price="annual">
+                  <p class="plan-price-compare">USD 1,090<span class="plan-period">/año</span></p>
+                  <p class="plan-price-line"><span class="plan-currency">USD</span><span class="plan-amount">790</span><span class="plan-period">/año</span></p>
+                  <p class="plan-price-note">USD 65.83<span class="plan-period">/mes</span> · 4.16x Esencial</p>
+                </div>
+              </div>
+
+              <p class="price-sub">Orientado a equipos con mayor escala, continuidad operativa y administración centralizada.</p>
+              <ul class="feature-list">
+                <li>Doctores ilimitados</li>
+                <li>Recepcionistas ilimitados</li>
+                <li>PCs ilimitadas</li>
+                <li>Backups automáticos y multi-PC local</li>
+              </ul>
+              <div class="plan-actions">
+                <a class="button secondary" href="mailto:nexiongt@gmail.com?subject=Licencia%20MedSys%20Enterprise">Consultar Enterprise</a>
+              </div>
+            </article>
+          </div>
+
+          <div class="pricing-jump" data-reveal>
+            <a class="button secondary compare-jump" href="#comparacion">Comparar planes</a>
+            <p class="pricing-footnote">Todos los planes se pagan por adelantado. La tarifa mensual refleja el precio total del plan dividido entre la cantidad de meses que lo componen.</p>
+          </div>
+
+          <div class="grid cols-2 pricing-info-grid" data-reveal>
+            <article class="card">
+              <h3 class="icon-title">
+                <span class="title-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <path d="M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83z"></path>
+                    <path d="M2 12a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 12"></path>
+                    <path d="M2 17a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 17"></path>
+                  </svg>
+                </span>
+                <span>Licenciamiento escalable</span>
+              </h3>
+              <p>Puedes comenzar con el nivel de operación adecuado para tu equipo y ampliar módulos, usuarios o equipos conforme crece la clínica.</p>
+            </article>
+            <article class="card">
+              <h3 class="icon-title">
+                <span class="title-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <path d="M14 17H5"></path>
+                    <path d="M19 7h-9"></path>
+                    <circle cx="17" cy="17" r="3"></circle>
+                    <circle cx="7" cy="7" r="3"></circle>
+                  </svg>
+                </span>
+                <span>Instalación y soporte</span>
+              </h3>
+              <p>La activación de licencia puede acompañarse con instalación, configuración o soporte, según el alcance comercial acordado con Nexion.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="comparacion">
+        <div class="section-head" data-reveal>
+          <span class="badge">Comparación</span>
+          <h2 class="section-title">Qué incluye cada licencia</h2>
+          <p class="section-subtitle">Comparación alineada con la estructura de licencias de MedSys.</p>
+        </div>
+
+        <div class="table-wrap" data-reveal>
+          <table class="compare-table">
+            <colgroup>
+              <col class="compare-col compare-col--stub" />
+              <col class="compare-col compare-col--plan" />
+              <col class="compare-col compare-col--plan" />
+              <col class="compare-col compare-col--plan" />
+              <col class="compare-col compare-col--plan" />
+            </colgroup>
+            <thead>
+              <tr class="compare-plan-row">
+                <th class="compare-stub" scope="col"></th>
+                <th scope="col">
+                  <div class="compare-plan-head compare-plan-head--soft">
+                    <p class="compare-plan-name">Esencial</p>
+                    <p class="compare-plan-price">USD 19<span class="plan-period">/mes</span></p>
+                    <a class="button secondary compare-plan-button" href="mailto:nexiongt@gmail.com?subject=Licencia%20MedSys%20Esencial">Consultar</a>
+                  </div>
+                </th>
+                <th scope="col">
+                  <div class="compare-plan-head compare-plan-head--soft">
+                    <p class="compare-plan-name">Clínica</p>
+                    <p class="compare-plan-price">USD 29<span class="plan-period">/mes</span></p>
+                    <a class="button secondary compare-plan-button" href="mailto:nexiongt@gmail.com?subject=Licencia%20MedSys%20Cl%C3%ADnica">Consultar</a>
+                  </div>
+                </th>
+                <th scope="col">
+                  <div class="compare-plan-head">
+                    <span class="compare-plan-badge">Popular</span>
+                    <p class="compare-plan-name">Pro</p>
+                    <p class="compare-plan-price">USD 49<span class="plan-period">/mes</span></p>
+                    <a class="button compare-plan-button compare-plan-button--accent" href="mailto:nexiongt@gmail.com?subject=Licencia%20MedSys%20Pro">Consultar</a>
+                  </div>
+                </th>
+                <th scope="col">
+                  <div class="compare-plan-head compare-plan-head--soft">
+                    <p class="compare-plan-name">Enterprise</p>
+                    <p class="compare-plan-price">USD 79<span class="plan-period">/mes</span></p>
+                    <a class="button secondary compare-plan-button" href="mailto:nexiongt@gmail.com?subject=Licencia%20MedSys%20Enterprise">Consultar</a>
+                  </div>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">
+                  <span class="compare-row-title">
+                    <span class="compare-row-title-icon" aria-hidden="true">
+                      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                        <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"></path>
+                        <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09"></path>
+                        <path d="M9 12a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.4 22.4 0 0 1-4 2z"></path>
+                        <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 .05 5 .05"></path>
+                      </svg>
+                    </span>
+                    <span>Funciones principales</span>
+                  </span>
+                </th>
+                <td class="table-value-yes">Incluido</td>
+                <td class="table-value-yes">Incluido</td>
+                <td class="table-value-yes">Incluido</td>
+                <td class="table-value-yes">Incluido</td>
+              </tr>
+              <tr>
+                <th scope="row">Pagos, presupuestos y planes</th>
+                <td class="table-value-no">No</td>
+                <td class="table-value-yes">Sí</td>
+                <td class="table-value-yes">Sí</td>
+                <td class="table-value-yes">Sí</td>
+              </tr>
+              <tr>
+                <th scope="row">Reportes</th>
+                <td class="table-value-no">No</td>
+                <td class="table-value-yes">Sí</td>
+                <td class="table-value-yes">Sí</td>
+                <td class="table-value-yes">Sí</td>
+              </tr>
+              <tr>
+                <th scope="row">Odontograma (cuando el flujo lo requiere)</th>
+                <td class="table-value-no">No</td>
+                <td class="table-value-yes">Sí</td>
+                <td class="table-value-yes">Sí</td>
+                <td class="table-value-yes">Sí</td>
+              </tr>
+              <tr>
+                <th scope="row">Backups manuales</th>
+                <td class="table-value-no">No</td>
+                <td class="table-value-yes">Sí</td>
+                <td class="table-value-yes">Sí</td>
+                <td class="table-value-yes">Sí</td>
+              </tr>
+              <tr>
+                <th scope="row">Inventario, ventas y movimientos</th>
+                <td class="table-value-no">No</td>
+                <td class="table-value-no">No</td>
+                <td class="table-value-yes">Sí</td>
+                <td class="table-value-yes">Sí</td>
+              </tr>
+              <tr>
+                <th scope="row">Auditoría y plantillas PDF</th>
+                <td class="table-value-no">No</td>
+                <td class="table-value-no">No</td>
+                <td class="table-value-yes">Sí</td>
+                <td class="table-value-yes">Sí</td>
+              </tr>
+              <tr>
+                <th scope="row">Multi-PC local</th>
+                <td class="table-value-no">No</td>
+                <td class="table-value-yes">Sí</td>
+                <td class="table-value-yes">Sí</td>
+                <td class="table-value-yes">Sí</td>
+              </tr>
+              <tr>
+                <th scope="row">Backups automáticos</th>
+                <td class="table-value-no">No</td>
+                <td class="table-value-no">No</td>
+                <td class="table-value-no">No</td>
+                <td class="table-value-yes">Sí</td>
+              </tr>
+              <tr>
+                <th scope="row">Límites incluidos</th>
+                <td>1 doctor · 1 recepción · 1 PC</td>
+                <td>2 doctores · 1 recepción · 3 PCs</td>
+                <td>3 doctores · 3 recepciones · 6 PCs</td>
+                <td>Ilimitado</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <div class="cta-strip" data-reveal>
+        <h2>¿No tienes claro qué licencia te conviene?</h2>
+        <p>Podemos ayudarte a mapear el plan correcto según tu tipo de clínica, número de usuarios, equipos y módulos realmente necesarios.</p>
+        <div class="hero-actions">
+          <a class="button" href="mailto:nexiongt@gmail.com?subject=Licencias%20MedSys">Solicitar información</a>
+          <a class="button secondary" href="index.html#alcance">Ver capacidades del producto</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span data-year></span> Nexion Software · MedSys</p>
+      <div class="footer-links">
+        <a href="terminos.html">Términos</a>
+        <a href="privacidad.html">Privacidad</a>
+        <a href="reembolsos.html">Reembolsos</a>
+      </div>
+      <div class="footer-contact">
+        <a class="contact-link contact-link--mail" href="mailto:nexiongt@gmail.com">nexiongt@gmail.com</a>
+        <a class="contact-link contact-link--whatsapp" href="https://wa.me/50245707531" target="_blank" rel="noopener noreferrer">+502 4570-7531</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
